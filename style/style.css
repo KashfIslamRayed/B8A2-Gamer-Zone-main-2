@@ -1,23 +1,514 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
-*{
+
+* {
     font-family: 'EB Garamond', serif;
-font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px;
 }
 
 /* nav bar */
 
 nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 1px 2px;
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .nav-a {
     display: flex;
     gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.gamer {
+    padding-left: 10px;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.gamer-1 {
+    color: rgb(255 66 165);
 }
 
 nav a {
     text-decoration: none;
     color: black;
+}
+
+.nav-bar-div {
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn {
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(11, 2, 35, 0.10);
+    ;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 30px;
+}
+
+/* banner */
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(251 245 251);
+}
+
+.banner-div-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-h4 {
+    color: #0B0223;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.banner-h3 {
+    text-align: center;
+    font-size: 62px;
+    font-weight: 800;
+    color: #F948B2;
+
+}
+
+.banner-p {
+    color: #534C64;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-left: 3px;
+}
+
+.banner-p p {
+    padding: 5px 0px;
+}
+
+.banner-btns {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.banner-btn-1 {
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 48px;
+    background-color: rgb(255 66 165);
+    color: white;
+}
+
+.banner-btn-2 {
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 48px;
+    background-color: rgb(71 180 226);
+    color: white;
+}
+
+.banner-img {
+    width: 25em;
+    height: 25em;
+}
+
+/* second section  */
+
+.second-sec {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.second-sec-h3 {
+    color: #0B0223;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.second-sec-h3-span {
+    color: rgb(193 80 209);
+}
+
+.second-sec-p {
+    color: #534C64;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.second-sec-imgs {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.second-sec-imgs img {
+    width: 10em;
+    height: 10em;
+}
+
+.second-sec-imgs p {
+    color: #534C64;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* third section */
+
+.third-section {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.third-section-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    margin-left: 120px;
+    position: relative;
+    left: 60px;
+}
+
+.third-section-div1-h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.third-section-div1-h3-span {
+    color: #F948B2;
+}
+
+.third-section-div1-p {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.third-section-div1-p p {
+    color: #534C64;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.third-section-img {
+    width: 55%;
+    height: 100%;
+    position: relative;
+    left: 150px;
+}
+
+.third-section-img2 {
+    width: 17%;
+    position: absolute;
+    top: 1250px;
+    right: 370px;
+}
+
+/* fourth section  */
+.fourth-section button {
+    border: 0px;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.fourth-section button:hover {
+    border: 1px solid;
+    border-color: #FF42A5;
+    color: #FF42A5;
+}
+
+.fourth-section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.fourth-section button {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.fourth-section img {
+    width: 20%;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #0B0223;
+    text-align: center;
+    color: white;
+    padding: 60px;
+}
+
+/* footer logo section */
+.footer_logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 56px;
+    font-size: 45px;
+    font-weight: 700;
+    gap: 5px;
+
+}
+
+.footer_logo_container h3 span {
+    color: #FF42A5;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/* content section */
+.footer_content {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* content section */
+.footer_privacy {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 60px;
+}
+
+/* social icon */
+.social_icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 20px;
+}
+
+.social_icon a {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+/* for footer anchor */
+.footer_anchor {
+    color: white;
+    text-decoration: none;
+}
+
+/* for footer_privacy_anchor */
+.footer_privacy_anchor {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer_copy_text {
+    padding-top: 32px;
+}
+
+
+
+/* ... (previous CSS rules) ... */
+
+/* Adjustments for screens with a max-width of 425px */
+@media (max-width: 425px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 86.041px;
+        height: 40px;
+    }
+
+    .nav-a {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-bar-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .gamer {
+        font-size: 30px;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .banner-p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .banner-btns {
+        display: flex;
+        width: fit-content;
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .banner-btn-1,
+    .banner-btn-2 {
+        font-size: 16px;
+        padding: 8px 20px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .second-sec {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .second-sec-h3 {
+        font-size: 24px;
+    }
+
+    .second-sec-p {
+        font-size: 12px;
+    }
+
+    .second-sec-imgs {
+        padding-top: 32px;
+        width: fit-content;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .fourth-section-div2 {
+        display: flex;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .second-sec-imgs p {
+        font-size: 10px;
+    }
+
+    .third-section {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .third-section-div {
+        left: 0;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    .third-section-div1-h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .third-section-div1-p p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .third-section-img {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: 20%;
+    }
+
+    .third-section-img2 {
+        width: 100px;
+        position: relative;
+        top: 0;
+        left: -45%;
+    }
+
+    .fourth-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .fourth-section button {
+        font-size: 12px;
+        padding: 5px 12px;
+        margin: 5px;
+    }
+
+    .social_icon a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer_logo_container {
+        font-size: 30px;
+    }
+
+    .footer_logo_container h3 span {
+        font-size: 30px;
+    }
+
+    .footer_content,
+    .footer_privacy {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .footer_anchor {
+        font-size: 12px;
+    }
+
+    .footer_privacy_anchor {
+        font-size: 10px;
+    }
+
+    .footer_copy_text {
+        padding-top: 10px;
+    }
 }
